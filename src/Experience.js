@@ -9,8 +9,8 @@ class Experience extends React.Component {
         company: "JDSC",
         role: "Data Scientist",
         type: "Part-time",
-        description: ["Big data analysis and ML modeling"],
-        tag: ["Python", "GCP", "Machine Learning"],
+        description: ["Big data analysis and ML modeling", "Preparation of materials for clients"],
+        tags: ["Python", "GCP", "Machine Learning"],
       },
       {
         startDate: "2020/10",
@@ -20,19 +20,19 @@ class Experience extends React.Component {
         description: [
           "Devising new businesses using blockchain technology and implementing business proposals",
         ],
-        tag: ["Python", "GCP", "Machine Learning"],
+        tags: ["Blockchain", "HTML", "CSS", "Javascript", "Go", "Node.js"],
       },
       {
         startDate: "2020/08",
         endDate: "2020/09",
-        company: "Recruit Holdings",
+        company: "Recruit Holdings Co., Ltd.",
         role: "UX Desiner",
         type: "Part-time",
         description: [
           "UX design for SUUMO with big data analysis and direction of development",
           "Contributed to an increase in sales of several hundred million yen",
         ],
-        tag: ["Python", "GCP", "Machine Learning"],
+        tags: ["UX", "Google Analytics", "BigQuery"],
       },
       {
         startDate: "2020/08",
@@ -43,7 +43,7 @@ class Experience extends React.Component {
           "Developing digital solutions using machine learning to prevent the spread of coronaviruses",
           "DX Systems Development Innovation Devision",
         ],
-        tag: ["Python", "GCP", "Machine Learning"],
+        tags: ["Python", "Machine Learning"],
       },
       {
         startDate: "2020/08",
@@ -53,13 +53,43 @@ class Experience extends React.Component {
         description: [
           "Identifying issues and proposing measures based on data analysis for services provided",
         ],
-        tag: ["Python", "GCP", "Machine Learning"],
+        tags: ["Python"],
+      },
+      {
+        startDate: "2019/02~2019/08",
+        company: "Liaro, inc.",
+        role: "ML Engineer",
+        type: "Part-time",
+        description: [
+          "Purchase prediction and inventory optimization using natural language processing and machine learning",
+        ],
+        tags: ["Python", "AWS", "Machine Learning", "NLP"],
+      },
+      {
+        startDate: "2018/11~2019/04",
+        company: "Splink, inc.",
+        role: "ML Engineer",
+        type: "Part-time",
+        description: [
+          "R&D for early prediction of dementia by applying deep learning to medical images",
+        ],
+        tags: ["Python", "GCP", "Deep Learning"],
+      },
+      {
+        startDate: "2018/11~2019/04",
+        company: "Amelieff Corporation",
+        role: "Bioinformatics Engineer",
+        type: "Part-time",
+        description: [
+          "Genetic analysis and single cell analysis",
+        ],
+        tags: ["Python", "R", "Bioinformatics"],
       },
     ];
     return (
       <div className="timeline-wrapper" name="experience">
         <div className="container">
-          <h2 className="title">Experiences</h2>
+          <h2 className="title">Experience</h2>
           <div className="experience-cards">
             {experienceList.map((exp) => {
               if (exp.endDate === undefined) {
@@ -76,6 +106,11 @@ class Experience extends React.Component {
                           return <li>{d}</li>;
                         })}
                       </ul>
+                      <p className="tags">
+                        {exp.tags.map((tag) => {
+                          return <span className="tag">{tag} </span>;
+                        })}
+                      </p>
                     </div>
                   </div>
                 );
@@ -95,6 +130,11 @@ class Experience extends React.Component {
                           return <li>{d}</li>;
                         })}
                       </ul>
+                      <p className="tags">
+                        {exp.tags.map((tag) => {
+                          return <span className="tag">{tag} </span>;
+                        })}
+                      </p>
                     </div>
                   </div>
                 );
