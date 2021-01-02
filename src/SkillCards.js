@@ -27,6 +27,7 @@ class SkillCard extends React.Component {
       { name: "JavaScript", className: "fab fa-js ", size: "normal" },
       { name: "React", className: "fab fa-react ", size: "normal" },
       { name: "Node.js", className: "fab fa-node-js ", size: "normal" },
+      { name: "R", className: "fab fa-r-project ", size: "normal" },
       { name: "Tableau", className: "fas fa-flask ", size: "normal" },
       { name: "GitHub", className: "fab fa-github ", size: "normal" },
       { name: "Docker", className: "fab fa-docker ", size: "normal" },
