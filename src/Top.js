@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 class Top extends React.Component {
   render() {
     return (
@@ -34,7 +34,16 @@ class Top extends React.Component {
               <span className="fab fa-github-square fa-4x"></span>
             </a>
           </div>
-          <div className="scroll center"></div>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={800}
+          >
+            <div className="scroll center"></div>
+          </Link>
         </div>
       </div>
     );
