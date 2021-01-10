@@ -18,7 +18,11 @@ class About extends React.Component {
               </tr>
               <tr>
                 <th>Laboratory</th>
-                <td><a href="http://www.kitao.bio.titech.ac.jp/">Kitao Laboratory</a></td>
+                <td>
+                  <a href="http://www.kitao.bio.titech.ac.jp/">
+                    Kitao Laboratory
+                  </a>
+                </td>
               </tr>
             </tbody>
           </table>
