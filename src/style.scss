@@ -132,7 +132,7 @@ ul {
   animation: fadein 2s;
   &:hover {
     opacity: 0.5;
-    transition: 0.3s;
+    transition: 0.5s;
   }
 }
 
@@ -275,6 +275,7 @@ td {
     margin-bottom: 20px;
     &:hover {
       filter: brightness(70%);
+      transition: 0.5s;
     }
   }
 }
