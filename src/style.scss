@@ -212,33 +212,32 @@ td {
 }
 
 .experience-cards {
-  border-left: 4px solid#8E98CD;
-  margin-left: 10%;
 }
 
 .experience-card {
   padding-top: 20px;
   padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
   display: flex;
-  position: relative;
-  &:after {
-    position: absolute;
-    z-index: -1;
-    border-top: 4px solid #8e98cd;
-    content: "";
-    left: 0;
-    top: 50%;
-    width: 100%;
-  }
+  // &:after {
+  //   position: absolute;
+  //   z-index: -1;
+  //   border-top: 4px solid #8e98cd;
+  //   content: "";
+  //   left: 0;
+  //   top: 50%;
+  //   width: 100%;
+  // }
 }
 
 .experience-card-content {
   width: 90%;
   background: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  margin-left: 10%;
+  // border-radius: 3px;
+  // margin-bottom: 10px;
+  // margin-left: 10%;
   & h3 {
     margin: 0 auto;
   }
